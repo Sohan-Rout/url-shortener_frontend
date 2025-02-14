@@ -1,0 +1,70 @@
+/* general style*/
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+  
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* form style*/
+.url-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+ 
+.url-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+  
+.dark-input {
+    background-color: #374151;
+    border-color: #4a5568;
+    color: white;
+}
+  
+.light-input {
+    background-color: #e2e8f0;
+    border-color: #cbd5e0;
+    color: black;
+}
+  
+.submit-button {
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial drop shadow */
+}
+  
+.submit-button:hover {
+    background-color: #1d4ed8; /* Darker blue on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+  
+.submit-button:active {
+    background-color: #1e40af; /* Even darker blue on click */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow on click */
+    transform: translateY(0); /* Reset lift effect on click */
+}
+  
+.submit-button.generating {
+    background-color: #1e40af; /* Darker blue for generating state */
+    cursor: not-allowed; /* Change cursor to indicate loading */
+}
+  
+.submit-button.generating::after {
+    content: 'Generating...'; /* Custom text */
+    margin-left: 0.5rem; /* Space between text and button content */
+}
