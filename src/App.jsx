@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className={`app ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <nav className={`navbar ${darkMode ? 'dark-navbar' : 'light-navbar'}`}>
-        <h1 className="navbar-title">LinkHive</h1>
+        <h1 className="navbar-title">HiveLink</h1>
         <div className="theme-control">
           {darkMode ? (
             <Moon className="theme-icon" size={20} />
