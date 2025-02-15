@@ -65,10 +65,17 @@ const App = () => {
             </button>
           </div>
 
+          <div class="divider"></div>
+          <p className="signup-text">Or</p>
+
           <div className="auth-inputs">
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Your Email" className={`auth-input ${darkMode ? 'dark-input' : 'light-input'}`} />
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter Your Password" className={`auth-input ${darkMode ? 'dark-input' : 'light-input'}`} />
           </div>
+
+          <button class="continue-button">
+            Continue
+          </button>
 
           <p className="privacy-text">By entering your details you accept our <a href="#" className="privacy-link">privacy & policy terms</a></p>
         </div>
