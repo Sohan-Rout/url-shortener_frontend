@@ -55,10 +55,10 @@ const ShortenForm = ({ setUrls, darkMode }) => {
         onChange={(e) => setLongUrl(e.target.value)}
         required
       />
-      <button className="submit-button" disabled={loading}>
+      <button className={`submit-button ${loading ? "generating" : ""}`} disabled={loading}>
         {loading ? "Shortening..." : "Shorten URL"}
       </button>
-      {error && <p className="text-red-500">{error}</p>}
+      {error && <p className="error-message">{error}</p>}
     </form>
   );
 };
