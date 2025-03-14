@@ -30,7 +30,7 @@ const ShortenForm = ({ setUrls, darkMode }) => {
         {
           longUrl: res.data.longUrl,
           // Create a cleaner shortened URL
-          shortUrl: `linkhive/${shortCode}`, // You can change this to your frontend domain
+          shortUrl: `https://url-shortner-api-rplq.onrender.com/${shortCode}`, // You can change this to your frontend domain
           // Store the full backend URL for actual redirection
           fullUrl: `https://url-shortner-api-rplq.onrender.com/${shortCode}`
         },
